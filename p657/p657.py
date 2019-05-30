@@ -1,3 +1,5 @@
+from time import time
+
 def I(alpha, n, mod=10**9+7):
     alphaCn = alpha % mod # initialize to alpha choose 1
     n_incomplete = 0
@@ -21,4 +23,5 @@ if __name__ == '__main__':
     print("Project Euler 657 solution")
     MOD = 10**9+7
     for ALPHA, N in zip([3, 3, 3, 10**7], [0, 2, 4, 10**12]):
-        print("I({},{}) mod {} = {}".format(ALPHA, N, MOD, I(ALPHA, N, mod=MOD)))
+        t0 = time()
+        print("I({},{}) mod {} = {}, {:.2f}".format(ALPHA, N, MOD, I(ALPHA, N, mod=MOD), time()-t0))
