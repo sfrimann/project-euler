@@ -104,3 +104,6 @@ venv.bak/
 .mypy_cache/
 
 .DS_Store
+
+# Jupyter AI / RTC chat session files
+*.chat

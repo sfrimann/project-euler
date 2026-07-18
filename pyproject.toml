@@ -1,0 +1,15 @@
+[project]
+name = "project-euler"
+version = "0.1.0"
+description = "Project Euler solutions"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyter>=1.1.1",
+    "jupyter-collaboration>=4.4.1",
+    "jupyterlab<4.6",
+    "matplotlib>=3.10.9",
+    "numpy>=2.2.6",
+    "pycrdt>=0.13.1",
+    "scipy>=1.15.3",
+    "sympy>=1.14.0",
+]
